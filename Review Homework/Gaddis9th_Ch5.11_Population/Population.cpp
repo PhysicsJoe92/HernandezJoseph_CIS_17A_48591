@@ -19,7 +19,6 @@ int main() {
     // Get starting population
     cout << "Please enter the starting population number: ";
     cin >> startPop;
-    
     // Validate starting organism population
     while (startPop < 2){
         cout << "You must enter a starting population of at least 2!\n"
@@ -31,7 +30,6 @@ int main() {
     // Get population growth as a percentage
     cout << "Enter the average daily population growth: ";
     cin >> dlyInc;
-    
     // Validate average daily population growth
     while (dlyInc < 0){
         cout << "You cannot have a negative population growth!\n"
@@ -40,10 +38,10 @@ int main() {
                 "greater than or equal to 0: ";
         cin >> dlyInc;
     }
-     // Get number of days they will multiply
+    
+    // Get number of days they will multiply
     cout << "Enter the number of days you wish to calculate: ";
     cin >> numDays;
-    
     // Validate the number of days
     while (numDays < 1){
         if (numDays == 0){
@@ -59,8 +57,7 @@ int main() {
     }
     
     // Calculate the daily growth
-    
-    for (int n = 1; n <= numDays; n++){
+     for (int n = 1; n <= numDays; n++){
         totPop = (startPop * (dlyInc/100.0))* n + startPop;
     cout << fixed << setprecision(1) << "Day " << n << " "
             "Population: " << totPop << endl;
