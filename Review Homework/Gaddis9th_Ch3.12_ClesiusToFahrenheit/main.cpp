@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-// Code bedins here
+// Code begins here
 int main() {
     // Variables
     float Cels, Fahr;
