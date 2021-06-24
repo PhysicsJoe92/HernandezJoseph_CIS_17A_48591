@@ -17,7 +17,6 @@ int main() {
     // Get user to enter degrees in Celsius
     cout << "Please enter the degrees in Celsius: ";
     cin >> Cels;
-    cout << endl;
 
     // Convert to Fahrenheit
     Fahr = (9.0 / 5.0) * Cels + 32;

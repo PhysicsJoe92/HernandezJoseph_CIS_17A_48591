@@ -21,7 +21,6 @@ int main(){
     // Get user to enter USD amount
     cout << "Please enter the USD amount you would like to convert:" << endl;
     cin >> USD;
-    cout << endl;
     
     // Convert currency
     YEN = YEN_PER_DOLLAR * USD;

@@ -16,10 +16,8 @@ int main(){
     //Get month and year
     cout << "Please enter the month of the year, from 1 to 12: ";
     cin >> month;
-    cout << endl <<
-            "Please enter the year: ";
+    cout << "Please enter the year: ";
     cin >> year;
-    cout << endl;
     
     //Display the number of days
     switch (month){
