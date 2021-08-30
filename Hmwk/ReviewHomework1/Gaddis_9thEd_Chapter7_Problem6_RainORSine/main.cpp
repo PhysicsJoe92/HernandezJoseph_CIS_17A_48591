@@ -8,9 +8,9 @@
  */
 
 // System Libraries
-#include <iostream>
+#include <iostream>     // I/O Libraries
 #include <iomanip>
-#include <fstream>
+#include <fstream>      // File Libraries
 using namespace std;
 
 // Global Variables
@@ -23,7 +23,7 @@ void fillArr(char [][COL]);
 void dspRain(int&);
 void dspWthr(int [][5]);
 void prtData(int [][5], int&);
-void wthrInf(char [][COL], int [][5], int);
+void wthrInf(char [][COL], int [][5], int&);
 
 // Code execution begins here with main
 int main(int argc, char** argv){
@@ -46,6 +46,7 @@ int main(int argc, char** argv){
     
     // Print report in WeatherDataReport.txt file
     prtData(mnthWtr, mostRn);
+
     return 0;
 }
 
@@ -164,7 +165,7 @@ void prtData(int wtrArr[][5], int& mR){
  *          (R)rainy days, or (S)sunny days. Then run a total of those days for
  *          each individual month and for all three months.
  */
-void wthrInf(char arr[][COL], int wArr[][5], int rnMost){
+void wthrInf(char arr[][COL], int wArr[][5], int &rnMost){
 
     int cT=0;       // Total cloud
     int cldCntZ=0;  // June cloud total
