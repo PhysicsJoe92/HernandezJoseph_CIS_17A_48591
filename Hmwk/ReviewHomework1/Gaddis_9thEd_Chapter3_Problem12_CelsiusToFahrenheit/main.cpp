@@ -2,7 +2,7 @@
  * File: main.cpp
  * Author: Joseph Hernandez
  * Created on 24 Aug 2021
- * Purpose: To convert Fahrenheit into Celsius
+ * Purpose: To convert Celsius to Fahrenheit
  */
 
 // System Libraries
